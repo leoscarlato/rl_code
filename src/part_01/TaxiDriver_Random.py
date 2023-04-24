@@ -1,5 +1,5 @@
 import gymnasium as gym
-env = gym.make('Taxi-v3', render_mode='human').env
+env = gym.make("Taxi-v3", render_mode='human').env
 
 done = False
 episodios = 1000
@@ -9,4 +9,8 @@ for i in range(episodios):
     while not done:
         action = env.action_space.sample()
         next_state, reward, done, truncated, info = env.step(action)
-        env.render()
+        #
+        # state, action, reward, next_state p/ aprender uma policy
+        #
+
+        #state.render()
