@@ -10,8 +10,8 @@ warnings.simplefilter("ignore")
 env = gym.make('FrozenLake-v1', render_mode='ansi').env
 
 # only execute the following lines if you want to create a new q-table
-#qlearn = QLearning(env, alpha=0.2, gamma=0.95, epsilon=0.8, epsilon_min=0.0001, epsilon_dec=0.9999, episodes=50000)
-#q_table = qlearn.train('data/q-table-frozen-lake-qlearning.csv','results/frozen_lake_qlearning')
+# qlearn = QLearning(env, alpha=0.2, gamma=0.95, epsilon=0.8, epsilon_min=0.0001, epsilon_dec=0.9999, episodes=50000)
+# q_table = qlearn.train('data/q-table-frozen-lake-qlearning.csv','results/frozen_lake_qlearning')
 q_table = loadtxt('data/q-table-frozen-lake-qlearning.csv', delimiter=',')
 
 env = gym.make('FrozenLake-v1', render_mode='human').env
